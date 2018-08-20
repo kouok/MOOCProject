@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script charset="utf-8" src="js/kindeditor-min.js"></script>
+	<style>
+		body,p,li,ul,h6,h5,h4{margin:0;padding:0;}
+		li{list-style:none}
+		.bj_img{background:url(images/bg2.jpg) no-repeat center;}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="">
+			<nav class="navbar navbar-expand-lg  navbar-dark container">
+			  <a class="navbar-brand" href="#"><img src="images/学习平台.png" alt=""></a>
+			  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+			    <ul class="navbar-nav">
+			      	<li class="nav-item">
+			        	<a class="nav-link text-dark" href="#">首页</a>
+			      	</li>
+			      	<li class="nav-item">
+			        	<a class="nav-link text-dark" href="#">课程体系</a>
+			      	</li>
+			      	<li class="nav-item">
+			        	<a class="nav-link text-dark" href="#">答疑社区</a>
+			      	</li> 
+			      	<li class="nav-item">
+			        	<a class="nav-link text-dark" href="#">共享资料</a>
+			      	</li> 
+			    </ul>
+			    <ul class="navbar-nav">
+			    	<li class="nav-item">
+			        	<div class="dropdown nav-link">
+			        	    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+			        	      搜索
+			        	    </button>
+			        	    <div class="dropdown-menu">
+			        	      	<a class="dropdown-item text-dark" href="#">Link 1</a>
+			        	      	<a class="dropdown-item text-dark" href="#">Link 2</a>
+			        	      	<a class="dropdown-item text-dark" href="#">Link 3</a>
+			        	    </div>
+			        	</div>
+			      	</li>
+			      	<li class="nav-item">
+			        	<a class="nav-link text-dark" href="#">个人中心</a>
+			      	</li> 
+			      	<li class="nav-item">
+			            <a class="nav-link text-dark" href="#">
+			              怒切萝卜
+			              <img src="images/3.png" width="30" height="30" alt="">
+			            </a>
+			        </li>
+			    </ul>
+			  </div> 
+			</nav>
+		</div>
+		<div class="bj_img">
+			<div class="container">
+				<div class="d-flex">
+					<div class="flex-fill pt-5 pb-5 d-flex">
+						<div>
+							<img src="images/3.png" alt="" width="40" height="40" >
+						</div>
+						<div class="text-white pl-3">
+							<p>怒切萝卜</p>
+							<p>身份类别:学员</p>
+							<p>个性签名</p>
+						</div>
+					</div>
+					<div class="flex-fill d-flex flex-row-reverse pt-5 pb-5 text-white">
+						<div >
+							<p class="pb-3">粉丝</p>
+							<span>16</span>
+						</div>
+						<div class="pr-3">
+							<p class="pb-3">关注</p>
+							<span >16</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="container">
+		<ul class="nav">
+		    <li class="nav-item">
+		      	<a class="nav-link text-danger" href="#">我的主页</a>
+		    </li>
+		    <li class="nav-item">
+		      	<a class="nav-link text-danger" href="#">好友动态</a>
+		    </li>
+		    <li class="nav-item">
+		      	<a class="nav-link text-danger" href="#">收藏夹</a>
+		    </li>
+		</ul>
+	</nav>
+	<section class="bg-light pt-3 pb-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-12 bg-white">
+					<div class="container">
+					  	<ul class="nav nav-pills" role="tablist">
+					    	<li class="nav-item">
+					      		<a class="nav-link active" data-toggle="pill" href="#home">课程</a>
+					    	</li>
+					    	<li class="nav-item">
+					      		<a class="nav-link" data-toggle="pill" href="#menu1">问答</a>
+					    	</li>
+					    	<li class="nav-item">
+					      		<a class="nav-link" data-toggle="pill" href="#menu2">动态</a>
+					    	</li>
+					  	</ul>
+
+				  <!-- Tab panes -->
+					  	<div class="tab-content">
+						    <div id="home" class="container tab-pane active"><br>
+						      	<ul class="row">
+						      		<li class="p-2 border col-md-12 col-lg-4">
+						      			<img src="images/20161104205906937.jpg" alt="" width="100%">
+						      			<h6>HTML框架集与布局</h6>
+						      			<span>132人在学</span>
+						      		</li>
+						      		<li class="p-2 border col-md-12 col-lg-4">
+						      			<img src="images/20161104205906937.jpg" alt="" width="100%">
+						      			<h6>HTML框架集与布局</h6>
+						      			<span>132人在学</span>
+						      		</li>
+						      		<li class="p-2 border col-md-12 col-lg-4">
+						      			<img src="images/20161104205906937.jpg" alt="" width="100%">
+						      			<h6>HTML框架集与布局</h6>
+						      			<span>132人在学</span>
+						      		</li>
+						      		<li class="p-2 border mt-3 col-md-12 col-lg-4">
+						      			<img src="images/20161104205906937.jpg" alt="" width="100%">
+						      			<h6>HTML框架集与布局</h6>
+						      			<span>132人在学</span>
+						      		</li>
+						      	</ul>
+						    </div>
+						    <div id="menu1" class="container tab-pane fade"><br>
+					      	  	<ul class="nav nav-pills" role="tablist">
+						      	    <li class="nav-item">
+					      	      		<a class="nav-link active" data-toggle="pill" href="#tiwen">我的提问</a>
+						      	    </li>
+						      	    <li class="nav-item">
+						      	      	<a class="nav-link" data-toggle="pill" href="#huida">我的回答</a>
+						      	    </li>
+					      	  	</ul>
+
+						      	  <!-- Tab panes -->
+					      	  	<div class="tab-content">
+						      	    <div id="tiwen" class=" tab-pane active"><br>
+						      	      	<ul>
+						      	      		<li class="border-bottom pt-2 pb-2">
+						      	      			<p class=" pt-2 pb-2">讨论学生提问第二个问题</p>
+						      	      			<div class="d-flex justify-content-between">
+						      	      				<span class="">2016-12-1 10:32:42</span> 
+						      	      				<span class="">4回复</span>
+						      	      			</div>
+						      	      		</li>
+						      	      		<li class="border-bottom pt-2 pb-2">
+						      	      			<p class=" pt-2 pb-2">讨论学生提问第二个问题</p>
+						      	      			<div class="d-flex justify-content-between">
+						      	      				<span>2016-12-1 10:32:42</span> <span>4回复</span>
+						      	      			</div>
+						      	      		</li>
+						      	      		<li class="border-bottom pt-2 pb-2">
+						      	      			<p class=" pt-2 pb-2">讨论学生提问第二个问题</p>
+						      	      			<div class="d-flex justify-content-between">
+						      	      				<span>2016-12-1 10:32:42</span> <span>4回复</span>
+						      	      			</div>
+						      	      		</li>
+						      	      	</ul>
+						      	    </div>
+						      	    <div id="huida" class="container tab-pane fade"><br>
+						      	      	<ul>
+						      	      		<li class="border-bottom pt-2 pb-2">
+						      	      			<p class=" pt-2 pb-2">讨论学生提问第二个问题</p>
+						      	      			<div class="d-flex justify-content-between">
+						      	      				<span class="">2016-12-1 10:32:42</span> 
+						      	      				<span class="">4回复</span>
+						      	      			</div>
+						      	      		</li>
+						      	      		<li class="border-bottom pt-2 pb-2">
+						      	      			<p class=" pt-2 pb-2">讨论学生提问第二个问题</p>
+						      	      			<div class="d-flex justify-content-between">
+						      	      				<span>2016-12-1 10:32:42</span> <span>4回复</span>
+						      	      			</div>
+						      	      		</li>
+						      	      		<li class="border-bottom pt-2 pb-2">
+						      	      			<p class=" pt-2 pb-2">讨论学生提问第二个问题</p>
+						      	      			<div class="d-flex justify-content-between">
+						      	      				<span>2016-12-1 10:32:42</span> <span>4回复</span>
+						      	      			</div>
+						      	      		</li>
+						      	      	</ul>
+						      	    </div>
+					      	  	</div>
+						    </div>
+						    <div id="menu2" class="container tab-pane fade"><br>
+						      	<textarea name="content" style="width:100%;height:200px;visibility:hidden;">KindEditor</textarea>
+						      	<ul>
+						      		<li class="border-bottom pt-2 pb-2">
+						      			<p class=" pt-2 pb-2">讨论学生提问第二个问题</p>
+						      			<div class="d-flex justify-content-between">
+						      				<span class="">2016-12-1 10:32:42</span> 
+						      				<span class="">4回复</span>
+						      			</div>
+						      		</li>
+						      		<li class="border-bottom pt-2 pb-2">
+						      			<p class=" pt-2 pb-2">讨论学生提问第二个问题</p>
+						      			<div class="d-flex justify-content-between">
+						      				<span>2016-12-1 10:32:42</span> <span>4回复</span>
+						      			</div>
+						      		</li>
+						      		<li class="border-bottom pt-2 pb-2">
+						      			<p class=" pt-2 pb-2">讨论学生提问第二个问题</p>
+						      			<div class="d-flex justify-content-between">
+						      				<span>2016-12-1 10:32:42</span> <span>4回复</span>
+						      			</div>
+						      		</li>
+						      	</ul>
+						    </div>
+					  	</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-12">
+					<div class="bg-white">
+						<div class="container pt-1 pb-1">
+							<ul class="nav nav-pills">
+					    		<li class="nav-item">
+					      			<span class="nav-link">最近访客<small >更多</small></span>
+					    		</li>
+					  		</ul>
+					  		<div class="container ">
+					  			<ul class="d-flex flex-wrap pb-3">
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  			</ul>
+					  		</div>
+						</div>
+					</div>
+					<div class="bg-white mt-3">
+						<div class="container pt-1 pb-1">
+							<ul class="nav nav-pills">
+					    		<li class="nav-item">
+					      			<span class="nav-link">最近访客<small >更多</small></span>
+					    		</li>
+					  		</ul>
+					  		<div class="container ">
+					  			<ul class="d-flex flex-wrap pb-3">
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  				<li style="width:33.3333%" class="mt-2 text-center"><img src="images/3.png" alt=""></li>
+					  			</ul>
+					  		</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer style="background-color:#515151">
+		<div class="container text-white pb-4">
+			<div class="row">
+				<div class="col-md-8 col-sm-12 pt-5">
+					<div><img src="images/学习平台.png" alt=""></div>
+					<p>MOOC学习平台为你提供海量优质课程,以新意的在线学习体验帮助你获得全新的个人发展和能力提升</p>
+					<div>关注我们: <a href="#">1</a><a href="#">2</a><a href="#">3</a></div>
+				</div>
+				<div class="col-md-4 col-sm-12 pt-5">
+					<div class="text-center">
+						<div >
+							<p >扫微信公众号</p>
+							<div><img src="images/5.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container border-bottom">
+			<div class="text-center pt-3 pb-3">				
+		       <a class="p-2 text-light" href="#">关于我们</a>				    				  
+		       <a class="p-2 text-light" href="#">联系我们</a>				    				  
+		       <a class="p-2 text-light" href="#">意见反馈</a>				    				  
+		       <a class="p-2 text-light" href="#">友情链接</a>				    				  
+		       <a class="p-2 text-light" href="#">常见问题</a>				    				  
+		       <a class="p-2 text-light" href="#">帮助中心</a>				    
+			</div>
+		</div>
+		<div class="container text-center pb-5">
+			<p class="pt-3 pb-5">&copy;Copyrigh2016大学信息部 平台开发小组 (备案和版权详细文字)</p>
+		</div>
+	</footer>
+	<div style="height:300px"></div>
+	<script>
+		var editor;
+        KindEditor.ready(function(K) {
+            editor = K.create('textarea[name="content"]', {
+                resizeType : 1,
+                allowPreviewEmoticons : false,
+                allowImageUpload : false,
+                items : [
+                    'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                    'insertunorderedlist', '|', 'emoticons', 'image', 'link'],
+                afterChange : function() {
+                    K('.word_count1').html(this.count());
+                    K('.word_count2').html(this.count('text'));
+                }
+            });
+        });
+	</script>
+</body>
+</html>
