@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<!-- <script src="js/baidu.js"></script> -->
+	 <!-- 让屏幕在手机端自适应 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	 <!--栅格化布局 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!--引入jquery文件 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--栅格化布局 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 引入图标文字 -->
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <!-- 编辑器 -->
+
+    <script src="js/kindeditor-min.js"></script>
+    <script src="js/zh_CN.js"></script>
+   <link rel="stylesheet" type="text/css" href="css/default.css"> 
+
+    
+    <style type="text/css">
+    	.meun img{vertical-align: middle;}
+    	#serch{width:200px;}
+    	i{font-style: normal;}
+    	.wrap{position: relative;}
+    	#show{position: absolute;left:-39px;top:23px;}
+    	input{border:none;}
+    	#show li{width: 200px;font-size: 12px; background:#f1f5f5;list-style: none;}
+        #show li:hover{background-color: #aaa;}
+        #show li a:hover{background-color: #aaa;}        	
+        .bj{background:url(images/bg2.jpg)no-repeat;background-size:cover;}   
+         	
+         
+
+         	
+         
+    </style>
+</head>
+<body>
+		  <!-- 导航 -->
+		  <nav class="navbar navbar-expand-md navbar-light bg-light">
+		    <!-- Brand -->
+		   <div class="container">
+		    <a class="navbar-brand" href="#"><img src="images/01.png" alt=""></a>
+		   
+		    <!-- Toggler/collapsibe Button -->
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		   
+		    <!-- Navbar links -->
+		    <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+		      <ul class="navbar-nav small meun">
+		        <li class="nav-item">
+		          <a class="nav-link" href="#home"><strong>首页</strong></a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#talk">课程体系</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#web">答疑社区</a>
+		        </li> 
+		        <li class="nav-item">
+		          <a class="nav-link" href="#new">共享资料</a>
+		        </li> 
+		      </ul>
+
+		      <ul class="navbar-nav meun small">
+		      	<li class="nav-item pt-3 mr-4">
+		      		<div class="wrap">
+		      		  <input type="text" id="serch">
+		      	      <label for="serch"><i class="iconfont">&#xe685;</i></label>
+		      	       <ul id="show" style="display:none">
+		      	    	
+		      	      </ul>
+                   </div>
+		      	</li>
+		      	<li class="nav-item pt-2 mr-4">
+		      	  <a class="nav-link" href="#new">个人中心</a>
+		      	</li> 
+		      	<li class="nav-item">
+		      	  <a class="nav-link" href="#new">怒切萝卜<img src="images/530.png" width="40"></a>
+		      	</li> 
+		      </ul>
+		    </div> 
+	       </div>
+		  </nav>
+<script type="text/javascript">
+		var serch=document.getElementById('serch')
+    	var show=document.getElementById('show')
+       
+       serch.onkeyup=function(){
+ 
+       	var val=this.value;
+        var osc=document.createElement("script");
+            osc.src="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+ val +"&cb=fly";
+         document.body.appendChild(osc)
+       }
+      
+      function fly(data){
+       console.log(123) 
+        show.style.display = 'block';
+        show.innerHTML="";	
+        // console.log(data)
+         for(var i=0;i<data.s.length;i++){
+             var oli=document.createElement("li");
+             var oa=document.createElement("a")
+              oli.appendChild(oa);
+             oa.innerHTML=data.s[i];
+             oa.href="https://www.baidu.com/s?wd="+data.s[i];
+             show.appendChild(oli);
+         }
+
+      }
+      //        document.body.onclick=function(){
+      // 	show.style.display="none"
+      // }
+</script>
+
+<section>
+	  <div class="bj">
+	  	  <div class="container text-white small pt-5 pb-5">
+	  	  	 <div class="row pt-5 pb-5">
+	  	  	 	 <div class="col-3 col-md-1">
+	  	  	 	 	 <img src="images/s1.jpg" width="80" class="rounded-circle border border-secondary">
+	  	  	 	 </div>
+	  	  	 	 <div class="col-9 col-md-11">
+	  	  	 	 		<h6>怒切萝卜</h6>
+	  	  	 	 	 	<div>身份内别：学员</div>
+	  	  	 	 	 	<div class="pt-2">个性签名：这是一些示例文本。这是一些示例文本。</div>
+	  	  	 	 </div>
+	  	  	 </div>
+	  	  </div>
+	  </div>  
+</section>
+
+<section>
+	  <div class="container pt-3 pb-3">
+	  	 <div class="row">
+	  	 	        <!-- 手机端  PC端-->
+	  	 	 <div class="col-4 col-md-2 text-danger text-centers pl-4">
+	  	 	 	   <i class="iconfont">&#xe614;</i>
+	  	 	 	   <span>我的主页</span>
+	  	 	 </div>
+	  	 	 <div class="col-4 col-md-2">
+	  	 	 	   <i class="iconfont">&#xe60a;</i>
+	  	 	 	   <span>好友动态</span>	  	 	 	
+	  	 	 </div>
+	  	 	 <div class="col-4 col-md-2">
+	  	 	 	   <i class="iconfont">&#xe6be;</i>
+	  	 	 	   <span>收藏夹</span>
+	  	 	 </div>
+	  	 </div>
+	  </div>
+</section>
+
+<section style="background-color:#f4f6f8">
+	 <div class="container">
+	 	 <div class="row pt-3 pb-3">
+	 	 	 <div class="col-12 bg-white col-md-7 pb-3">
+	 	 	 	<!-- Nav tabs -->
+	 	 	 	<ul class="nav nav-tabs" role="tablist">
+	 	 	 	  <li class="nav-item">
+	 	 	 	    <a class="nav-link active" data-toggle="tab" href="#home">课程</a>
+	 	 	 	  </li>
+	 	 	 	  <li class="nav-item">
+	 	 	 	    <a class="nav-link" data-toggle="tab" href="#menu1">问答</a>
+	 	 	 	  </li>
+	 	 	 	  <li class="nav-item">
+	 	 	 	    <a class="nav-link" data-toggle="tab" href="#menu2">动态</a>
+	 	 	 	  </li>
+	 	 	 	</ul>
+
+	 	 	 	<!-- Tab panes -->
+	 	 	 	<div class="tab-content mt-4">
+	 	 	 		<!-- 面板1 -->
+	 	 	 	  <div id="home" class="container tab-pane active">
+                      <div class="row">
+                    	<div class="col-12 col-md-4">
+                    		<div class="card">
+                    		  <img class="card-img-top" src="images/20161104205906937.jpg">
+                    		  <div class="card-body pl-0 pr-0">
+                    		    <a href="#" class="card-text">HTML框架集与布局</a>
+                    		    <div class="mt-2"><span class="text-secondary">132人在学</span><span class="float-right text-danger">￥148.00</span></div>
+                    		  </div>
+                    		</div>
+                    	</div>
+                    	<div class="col-12 col-md-4">
+                    		<div class="card">
+                    		  <img class="card-img-top" src="images/20161104205906937.jpg">
+                    		  <div class="card-body pl-0 pr-0">
+                    		    <a href="#" class="card-text">HTML框架集与布局</a>
+                    		    <div class="mt-2"><span class="text-secondary">132人在学</span><span class="float-right text-danger">￥148.00</span></div>
+                    		  </div>
+                    		</div>
+                    	</div>
+                    	<div class="col-12 col-md-4">
+                    		<div class="card">
+                    		  <img class="card-img-top" src="images/20161104205906937.jpg">
+                    		  <div class="card-body pl-0 pr-0">
+                    		    <a href="#" class="card-text">HTML框架集与布局</a>
+                    		    <div class="mt-2"><span class="text-secondary">132人在学</span><span class="float-right text-danger">￥148.00</span></div>
+                    		  </div>
+                    		</div>
+                    	</div>
+                      </div>                  
+                      <div class="row mt-2">
+                    	  <div class="col-12 col-md-4">
+                    		<div class="card">
+                    		  <img class="card-img-top" src="images/20161104205906937.jpg">
+                    		  <div class="card-body pl-0 pr-0">
+                    		    <a href="#" class="card-text">HTML框架集与布局</a>
+                    		    <div class="mt-2"><span class="text-secondary">132人在学</span><span class="float-right text-danger">￥148.00</span></div>
+                    		  </div>
+                    		</div>
+                    	  </div>
+                    	    <div class="col-12 col-md-4">
+                    	  	<div class="card">
+                    	  	  <img class="card-img-top" src="images/20161104205906937.jpg">
+                    	  	  <div class="card-body pl-0 pr-0">
+                    	  	    <a href="#" class="card-text">HTML框架集与布局</a>
+                    	  	    <div class="mt-2"><span class="text-secondary">132人在学</span><span class="float-right text-danger">￥148.00</span></div>
+                    	  	  </div>
+                    	  	</div>
+                    	    </div>
+                    	      <div class="col-12 col-md-4">
+                    	    	<div class="card">
+                    	    	  <img class="card-img-top" src="images/20161104205906937.jpg">
+                    	    	  <div class="card-body pl-0 pr-0">
+                    	    	    <a href="#" class="card-text">HTML框架集与布局</a>
+                    	    	    <div class="mt-2"><span class="text-secondary">132人在学</span><span class="float-right text-danger">￥148.00</span></div>
+                    	    	  </div>
+                    	    	</div>
+                    	      </div>
+                      </div>
+	 	 	 	  </div>
+	 	 	 	  <!-- 面板2 -->
+	 	 	 	  <div id="menu1" class="container tab-pane fade">
+                      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">我的提问</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">我的回答</a>
+                        </li>
+
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        	<div class="container">
+                        		 <div class="row">
+                        		 	 <div class="col-12 pt-2 pb-4">
+                        		 	 	<p>讨论区学生第二个提问</p>
+                        		 	 	<p class="small"><span>2016-11-01 09:56:27</span><span class="float-right">4赞同</span></p>
+                        		 	 	<hr>
+                        		 	 </div>
+                        		 	 <div class="col-12 pt-2 pb-4">
+                        		 	 	<p>讨论区学生第二个提问</p>
+                        		 	 	<p class="small"><span>2016-11-01 09:56:27</span><span class="float-right">4赞同</span></p>
+                        		 	 	<hr>
+                        		 	 </div>
+                        		 </div>
+                        	</div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        	 <div class="container">
+                        	 	 <div class="row">
+                        	 	 	 <div class="col-12 pt-2 pb-4">
+                        	 	 	 	<p>讨论区学生第一个提问</p>
+                        	 	 	 	<p class="small"><span>2016-11-01 09:56:27</span><span class="float-right">4赞同</span></p>
+                        	 	 	 	<hr>
+                        	 	 	 </div>
+                        	 	 	 <div class="col-12 pt-2 pb-4">
+                        	 	 	 	<p>讨论区学生第一个提问</p>
+                        	 	 	 	<p class="small"><span>2016-11-01 09:56:27</span><span class="float-right">4赞同</span></p>
+                        	 	 	 	<hr>
+                        	 	 	 </div>
+                        	 	 </div>
+                        	 </div>
+                        </div>
+
+                      </div>
+	 	 	 	  </div>
+
+	 	 	 	  <!-- 面板3 -->
+	 	 	 	  <div id="menu2" class="container tab-pane fade">
+             <div class="container">
+               <div class="row">
+                   <div class="col-12">
+                      <textarea name="content" style="width:100%;height:100px;visibility:hidden;">KindEditor</textarea>
+                   </div>
+                   <div class="col-12 mt-2">
+                      <button type="button" class="btn btn-danger float-right">发表</button>
+                   </div>
+                   <div class="col-12 pt-2 pb-4">
+                    <p>讨论区学生第一个提问</p>
+                    <p class="small"><span>2016-11-01 09:56:27</span><span class="float-right text-secondary">赞同10&nbsp;&nbsp;收藏5&nbsp;&nbsp;转发5&nbsp;&nbsp;评论4&nbsp;&nbsp;</span></p>
+                    <hr>
+                   </div>
+                   <div class="col-12 pt-2 pb-4">
+                    <p>讨论区学生第一个提问</p>
+                    <p class="small"><span>2016-11-01 09:56:27</span><span class="float-right text-secondary">赞同10&nbsp;&nbsp;收藏5&nbsp;&nbsp;转发5&nbsp;&nbsp;评论4&nbsp;&nbsp;</span></p>
+                    <hr>
+                   </div>
+                   <div class="col-12 pt-2 pb-4">
+                    <p>讨论区学生第一个提问</p>
+                    <p class="small"><span>2016-11-01 09:56:27</span><span class="float-right text-secondary">赞同10&nbsp;&nbsp;收藏5&nbsp;&nbsp;转发5&nbsp;&nbsp;评论4&nbsp;&nbsp;</span></p>
+                    <hr>
+                   </div>
+                </div>
+             </div>
+	 	 	 	  </div>
+          <script>
+              var editor;
+              KindEditor.ready(function(K) {
+                  editor = K.create('textarea[name="content"]', {
+                      resizeType : 1,
+                      allowPreviewEmoticons : false,
+                      allowImageUpload : false,
+                      items : [
+                          'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                          'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                          'insertunorderedlist', '|', 'emoticons', 'image', 'link'],
+                  });
+              });
+          </script>
+
+	 	 	 	</div>
+	 	 	 </div>
+
+
+	 	 	   <!-- 右边 -->
+	 	 	 <div class="col-12 col-md-4">
+	 	 	 	  <div class="container mt-4">
+            <div class="row">
+               <div class="col-12 bg-white border border-gray">
+                    <div class="container">
+                       <div class="row pt-2 pb-2">
+                          <div class="col-6 text-center border border-top-0 border-bottom-0 border-left-0">
+                       
+                               <span><strong>16</strong></span>
+                               <div class="strong">关注</div>
+                           
+                          </div>
+                          <div class="col-6 text-center">
+                              <span><strong>16</strong></span>
+                              <div class="strong">粉丝</div>
+                          </div>
+                       </div>
+                    </div>
+               </div>
+               <div class="col-12 mt-2 bg-white border">
+                   <div class="card border-0">
+                     <div class="card-header bg-white">
+                         <span>最近访客</span>
+                         <span class="float-right">更多&gt;</span>
+                     </div>
+                     <div class="card-body">
+                         <div class="container">
+                            <div class="row">
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="row">
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                            </div>
+                         </div>   
+                     </div>
+                   </div>
+               </div>
+               
+               <div class="col-12 mt-2 bg-white border">
+                   <div class="card border-0">
+                     <div class="card-header bg-white">
+                         <span>感兴趣的人</span>
+                         <span class="float-right">更多&gt;</span>
+                     </div>
+                     <div class="card-body">
+                         <div class="container">
+                            <div class="row">
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                            </div>
+                            <!-- 第二行 -->
+                            <div class="row">
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                                <div class="col-4 text-center pl-0">
+                                   <img src="images/s1.jpg" class="rounded-circle" width="80">
+                                   <div>胡歌</div>
+                                </div>
+                            </div>
+                         </div>   
+                     </div>
+                   </div>
+               </div>
+            </div> 
+          </div>
+	 	 	 </div>
+	 	 </div>
+	 </div>
+</section>
+
+<!-- 脚部 -->
+<footer class="bg-dark">
+       <div class="container">
+           <div class="row pt-4 pb-4 small">
+               <div class="col-12 mb-3">
+                  <div class="container text-white">
+                     <div class="row">
+                        <div class="col-8">
+                           <img src="images/01.png" alt="">
+                           <p class="mt-2">MOOC学习平台为你提供海量优质课程,以新颖的在线学习型体验帮助你</p>
+                           <p>获得全新的个人发展跟能力提升</p>
+                            <div>
+                               <span>关注我们:
+                                  <a href="#" class="iconfont">&#xe6ef;</a>
+                                  <a href="#" class="iconfont">&#xe62f;</a>
+                                  <a href="#" class="iconfont">&#xe6e4;</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-4"> 
+                            <div class="small">扫微信公共号</div>
+                           <img src="images/533.png" width="80">
+                      </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 mb-3 text-center text-white">
+                  <span>关于我们</span>
+                  <span>联系我们</span>
+                  <span>意见反馈</span>
+                  <span>友情链接</span>
+                  <span>常见问题</span>
+                  <span>帮助中心</span>
+               </div>
+               <div class="col-12 text-center text-secondary">
+                  ©Copyright2016大学信息部&nbsp;平台开发小组（备案和版权详细文字）
+               </div>
+           </div>
+       </div> 
+</footer>
+
+</body>
+</html>
