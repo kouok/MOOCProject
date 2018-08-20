@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+    <!-- 让IE以最新内核运行HTML -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>bootstrap项目实战</title>
+    <!-- V4版本bootstrap样式 -->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <!-- bootstrap V3版本的字体样式 -->
+    <link rel="stylesheet" href="css/font.css"/>
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- 动画样式，用来配合wow.js -->
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/ke.css"/>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+   <link rel="stylesheet" href="css/default/default.css" />
+    <script charset="utf-8" src="js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="js/zh_CN.js"></script>
+
+
+
+    <style type="text/css">
+    *{padding: 0;margin:0;}
+    a:hover{text-decoration: none;}
+    	.bei{background:url(images/bg2.jpg) no-repeat;background-size:cover;}
+    
+
+    </style>
+
+
+
+</head>
+<body>
+        <!--导航-->
+	<nav class="navbar navbar-light navbar-expand-md fixed-top bg-white">
+    <div class="container">
+        <!-- 导航标题logo -->
+        <a href="#" class="navbar-brand text-success">
+        <img src="images/01.png">
+        </a>
+        <!--小屏幕导航按钮和logo：折叠按钮-->
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="collapse navbar-collapse justify-content-between small pt-2" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">首页</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">课程体系</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">答疑社区</a>
+      </li> 
+       <li class="nav-item">
+        <a class="nav-link" href="#">共享资料</a>
+      </li> 
+    </ul>
+    <ul class="navbar-nav pt-1">
+      <li class="nav-item dropdown">
+	                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                           <i class="iconfont">&#xe685;</i> 
+	                        </a>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">个人中心</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">怒切萝卜</a>
+      </li> 
+      <li class="nav-item">
+	                    	<a class="nav-link p-0" href="#"><img src="images/530.png" style="width: 40px;height: 40px"></a>
+	                    </li>
+
+    </ul>
+  </div> 
+    </div>
+</nav>
+<!-- 区块1 -->
+<section>
+	<div class="bei" style="height: 300px;">
+			<div class="container text-white small clearfix  pb-0 pt-5">
+				<div class="row pt-5 pb-3"> 
+					<div class="col-3 col-md-1">
+						<img src="images/530.png" class="rounded-circle border border-secondary" style="width: 60px;height: 60px">
+					</div>
+					<div class="col-9 col-md-11">
+						<h6>怒切萝卜</h6>
+					 	<div>身份内别：学员</div>
+					 	<div class="pt-2">个性签名：这是一些示例文本。这是一些示例文本。</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+</section>
+<!-- 区块2 -->
+<section>
+	<div class="container pt-2">
+		<div class="row">
+			<div class="col-4 col-md-2">
+					<a href="#" class="text-danger">
+						<i class="iconfont">&#xe614;</i>
+						<span>我的主页</span>
+					</a>
+				</div>
+				<div class="col-4 col-md-2">
+					<a href="#" class="text-secondary">
+						<i class="iconfont">&#xe60a;</i>
+						<span>好友动态</span>
+					</a>
+				</div>
+				<div class="col-4 col-md-2">
+					<a href="#" class="text-secondary">
+						<i class="iconfont">&#xe6be;</i>
+						<span>收藏夹</span>
+					</a>
+				</div>
+				<div class="col-md-6"></div>
+			</div>
+		</div>
+</section>
+<!-- 区块3 -->
+<section>
+	<div style="background: #E1DBDB" class="mt-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-8 mt-3 mb-3" style="background: white">
+				<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#h">课程</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">问答</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">动态</a>
+    </li>
+	</ul>
+
+  <!-- Tab panes -->
+    	<!-- 图片1 -->
+  <div class="tab-content mt-3">
+  
+  	
+    	
+    <div id="h" class="container tab-pane active" style="height: 900px">
+    	<div class="row">
+    		<div class="col-12 col-md-4">
+    			
+    				<div class="card">
+    <img class="card-img-top" src="images/532.png" alt="Card image">
+    <div class="card-body pl-0 pr-0">
+    	<a href="#" class="card-text text-dark">HTML框架集与布局</a>
+    	<div class="mt-2"><span class="text-secondary">132人学</span><span class="float-rigth text-danger" style="float: right;">￥148.00</span>
+    	</div>
+    </div>
+  </div>
+  </div>
+      
+      <!-- 图片2 -->
+      <div class="col-12 col-md-4">
+    			
+    				<div class="card">
+    <img class="card-img-top" src="images/532.png" alt="Card image">
+    <div class="card-body pl-0 pr-0">
+    	<a href="#" class="card-text text-dark">HTML框架集与布局</a>
+    	<div class="mt-2"><span class="text-secondary">132人学</span><span class="float-rigth text-danger" style="float: right;">￥148.00</span>
+    	</div>
+    </div>
+  </div>
+  </div>
+  <div class="col-12 col-md-4">
+    			
+    				<div class="card">
+    <img class="card-img-top" src="images/532.png" alt="Card image">
+    <div class="card-body pl-0 pr-0">
+    	<a href="#" class="card-text text-dark">HTML框架集与布局</a>
+    	<div class="mt-2"><span class="text-secondary">132人学</span><span class="text-danger" style="float: right;">￥148.00</span>
+    	</div>
+    </div>
+  </div>
+  </div>
+      
+    			</div>
+    		</div>
+    	<!-- 问答 -->
+    <div id="menu1" class="container tab-pane fade" style="height: 500px"><br>
+      <div class="row">
+      	<div class="col-12">
+      		
+      		<div class="border-bottom pl-0 pr-0">
+      			<p>我的提问<button type="button" class="btn btn-secondary ml-5 btn-sm">我的回答</button></p>
+      			<p class="pt-5">讨论区学生提问第二个问题</p>
+      			<p class="text-secondary">2016-11-01&nbsp;09:56:27<span style ="float: right;">4赞同</span></p>
+      		</div>
+      	</div>
+      	<div class="col-12">
+      		
+      		<div class="border-bottom pl-0 pr-0">
+      			
+      			<p class="pt-4">测试提问13456123456</p>
+      			<p class="text-secondary">时间三天前<span style ="float: right;">2赞同</span></p>
+      		</div>
+      	</div>
+      	</div>
+      </div>
+    
+   
+    <!-- 动态 -->
+    <div id="menu2" class="container tab-pane fade" style="height: 800px"><br>
+      <div class="row mt-2">
+      	<div class="col-12">
+      	<textarea name="content" style="width:100%;height:100px;visibility:hidden;"></textarea>
+      	<p class="mt-2"><button type="button" class="btn btn-danger btn-sm;" style="float: right;">我的回答</button></p>
+        <script>
+
+            var editor;
+        KindEditor.ready(function(K) {
+            editor = K.create('textarea[name="content"]', {
+                resizeType : 1,
+                allowPreviewEmoticons : false,
+                allowImageUpload : false,
+                items : [
+                    'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                    'insertunorderedlist', '|', 'emoticons', 'image', 'link'],
+                afterChange : function() {
+                    K('.word_count1').html(this.count());
+                    K('.word_count2').html(this.count('text'));
+                }
+            });
+        });
+        </script>
+      	</div>
+      	<!-- 评论 -->
+      	<div class="col-12">
+      		<div class="border-bottom pl-0 pr-0">
+      			
+      			<p class="pt-4">谁有Java练习题的网址， 求发 (最好多一点)</p>
+      			<p class="text-secondary">2016-11-01 09:56:27<span style ="float: right;">
+      				<span class="mr-2">赞10</span>
+      				<span class="mr-2">收藏3</span>
+      				<span class="mr-2">转发4</span>
+      				<span class="mr-2">评论6</span>
+      			</span></p>
+      		</div>
+      	</div><div class="col-12">
+      		<div class="border-bottom pl-0 pr-0">
+      			
+      			<p class="pt-4">Java基础知识总结 (重要)</p>
+      			<p class="text-secondary">2016-11-01 09:56:27<span style ="float: right;">
+      				<span class="mr-2">赞8</span>
+      				<span class="mr-2">收藏3</span>
+      				<span class="mr-2">转发4</span>
+      				<span class="mr-2">评论11</span>
+      			</span></p>
+      		</div>
+      	</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 小区块2 -->
+<div class="col-md-4 col-12">
+	<div class="row mt-3">
+		<div class="col-md-2"></div>
+		<div class="bg-white col-md-10 col-12" >
+		<div class="border-bottom pt-2">
+			<p>最近访客<span style="float:right;"><a href="" class="text-dark">更多></a></span></p>
+	</div>
+	<div class="row mt-2">
+		<div class="col-12 col-md-4 text-center">
+			<img src="images/529.png">
+			<p>BGHJHJH</p>
+		</div>
+		<div class="col-12 col-md-4 text-center">
+			<img src="images/529.png">
+			<p >DFDSFSDF</p>
+		</div>
+		<div class="col-12 col-md-4 text-center">
+			<img src="images/529.png">
+			<p>IOOPIKL</p>
+		</div>
+	</div>
+	</div>
+	<div class="col-md-2"></div>
+		<div class="bg-white col-md-10 col-12 mt-2">
+		<div class="border-bottom pt-2">
+			<p>最近访客<span style="float:right;"><a href="" class="text-dark">更多></a></span></p>
+	</div>
+	<div class="row mt-2">
+		<div class="col-12 col-md-4 text-center">
+			<img src="images/528.png">
+			<p class="text-center">BGHJHJH</p>
+		</div>
+		<div class="col-12 col-md-4 text-center">
+			<img src="images/528.png">
+			<p class="text-center">DFDSFSDF</p>
+		</div>
+		<div class="col-12 col-md-4 text-center">
+			<img src="images/528.png">
+			<p class="text-center">IOOPIKL</p>
+		</div>
+	</div>
+	</div>
+	
+		
+			
+
+</div>
+			</div>
+
+
+
+
+
+
+		</div>
+	</div>
+	
+</section>
+
+<footer id="wei">
+  <div class="container pt-4">
+    <div class="row">
+     <div>
+      <img src="images/01.png">
+     </div> 
+   </div>
+     <div class="row mt-4 yan">
+      <span>
+       MOOC学习平台为s你提供海量优质课程，以新怡的在线学习体验帮助你获得全新的个人发展和能力
+     </span>
+     </div>
+      <div class="row mt-4 yan">
+        <span>关注我们：微信 微博 QQ</span>
+      </div>
+    <div class="row justify-content-center bian">
+      <ul class="a1">
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">关于我们</a></li>
+      </ul>
+    </div>
+    <div class="justify-content-center yan">
+      &copy;Copyright 2016 大学信息部 平台开发小组 （备案和版权详细文字）
+    </div>
+
+     
+   
+    
+  </div>
+</footer>
+    	
+      	
+    
+
+    
+
+
+
+
+     
+   
+
+      
+
+	
+					
+				
+				
+					
+
+
+
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<!-- 一个轻量级的jQuery的单页网站导航插件。增加了单击后平滑滚动导航和当你浏览不同的部分时自动选择正确的导航项 -->
+<script src="js/jquery.singlePageNav.min.js"></script>
+<!-- wow插件依赖于animate.css，当窗口变化时会执行css3动画 -->
+<script src="js/wow.min.js"></script>
+
+</html>
