@@ -1,0 +1,14 @@
+a:hover{text-decoration: none;color: white}
+a{color: black;}
+.inblock{display: inline-block;}
+.img1{width: 40px;height: 40px;}
+.img2{width: 80px;height: 80px;}
+.bj{background:url(../images/bg2.jpg) no-repeat;background-size:cover;}
+.font50{font-size:3.125rem;}
+.hove:hover{border: none;}
+.ul li .hove1{border: none;}
+.hove2{border-bottom: 2px solid red;}
+.border .ul2 .act1{background: #979797;}
+.co1{color: black;}
+.border .ul2 li .co{color: white;}
+.ul2 li .hove2{border: none;}
