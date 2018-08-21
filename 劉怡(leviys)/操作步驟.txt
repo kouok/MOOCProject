@@ -1,0 +1,6 @@
+1.fork產品經理創建的文件夾
+2.在file中下載到本地colne
+3.在c盤中打開文件夾，將項目放進去
+4.提交到客戶端 commit to master----Fetch origin --劉怡
+5.上傳到自己的雲端，New pull request --劉怡
+6.等待產品經理不衝突整合
