@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.singlePageNav.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<link rel="stylesheet" href="js/themes/default/default.css" />
+    <script charset="utf-8" src="js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="js/lang/zh_CN.js"></script>
+</head>
+<body>
+	<div class="container-fluid p-0">
+		<!-- 导航栏 -->
+		<nav class="navbar navbar-expand-md  navbar-light  fixed-top bg-white menu">
+
+		  <div class="container top-bar">
+		  <!-- Brand -->
+			 <a class="navbar-brand text text-success font-weight-bold " href="#"><img src="images/学习平台.png"></a>
+			 
+			  <!-- Toggler/collapsibe Button -->
+			  <button class="navbar-toggler border " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <!-- 弹性盒子无法使用浮动，要实现水平方向方向的排列，请使用：justify-content-between -->
+			  <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+			    <!-- 左侧导航栏 -->
+				    <ul class="navbar-nav  ">
+				      	<li class="nav-item">
+				        	<a class="nav-link text-dark">首页</a>
+				      	</li>
+				      	<li class="nav-item">
+				        	<a class="nav-link text-dark">课程体系</a>
+				      	</li>
+				      	<li class="nav-item">
+				        	<a class="nav-link text-dark">答疑社区</a>
+				      	</li>
+				      	<li class="nav-item">
+				        	<a class="nav-link text-dark">共享资料</a>
+				      	</li>
+				    </ul>
+				    <!-- 右侧导航栏 -->
+				    <ul class="navbar-nav" >
+				    	<li class="nav-item dropdown mr-3 mt-3">
+				    		 <a class="nav-link dropdown-toggle iconfont" data-toggle="dropdown" href="#">&#xe696;</a>
+				    		 <div class="dropdown-menu  ">
+				    		 	<a class="dropdown-item" href="#"><input type="text" name=""></a>
+				    		 </div>
+				    	</li>
+				    	<li class="nav-item mr-3 mt-3">
+				    		 <a class="nav-link" href="#">个人中心</a>
+				    	</li>
+				    	<li class="nav-item mr-3">
+				    		<a class="nav-link" href="#">怒切萝卜<span><img src="images/3.png" style=""></span></a>
+				    	</li>
+				    </ul>
+			  </div> 
+		  </div>
+		</nav>
+	</div>
+
+
+	<!-- 背景 -->
+	<section class="bgtu mt-5 pt-5" >
+		<div class="container" style="margin-top:10%">
+			<div class="row">
+				<div class="col-12 col-md-6 clearfix">
+					<div class="fl">
+						<img src="images/3.png">
+					</div>
+					<div class="fl text-white ml-2">
+						<h5>怒切萝卜</h5>
+						<div>身份类别:学员</div>
+						<div>个性签名:.....</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 clearfix ">
+					<div class="fr text-white mr-5">
+						<div>粉丝</div>
+						<div><b>7</b></div>
+					</div>
+					<div class="fr text-white mr-5">
+						<div>关注</div>
+						<div><b>16</b></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container mt-5 mb-3">
+			<div class="row">
+				<div class="col-12 col-md-6 clearfix">
+					<div class="fl mr-5">
+						<span class="iconfont ">&#xe634;</span>
+						<span class="">我的主页</span>
+					</div>
+					<div class="fl mr-5">
+						<span class="iconfont">&#xe78a;</span>
+						<span>好友动态</span>
+					</div>
+					<div class="fl">
+						<span class="iconfont">&#xe626;</span>
+						<span>收藏夹</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-light pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-8 bg-white mt-4">
+					<!-- 切换1 -->
+					<ul class="nav nav-tabs " role="tablist">
+					    <li class="nav-item">
+					      <a class="nav-link active" data-toggle="tab" href="#home">课程</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" data-toggle="tab" href="#menu1">问答</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" data-toggle="tab" href="#menu2">动态</a>
+					    </li>
+					  </ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div id="home" class="container tab-pane active">
+					      <div class="container">
+					      	<div class="row mt-3 mb-3" >
+					      		<div class="border p-2">
+					      			<img src="images/20161104205906937.jpg" style="width: 210px">
+					      			<div>HTML框架集与布局</div>
+					      			<div class="small" style="color: #BFBFBF">132人在学<span class="small ml-4" style="color:red">￥148.00</span></div>
+					      		</div>
+					      		<div class="border p-2">
+					      			<img src="images/20161104205906937.jpg" style="width: 210px">
+					      			<div>HTML框架集与布局</div>
+					      			<div class="small" style="color: #BFBFBF">132人在学<span class="small ml-4" style="color:red">￥148.00</span></div>
+					      		</div>
+					      		<div class="border p-2">
+					      			<img src="images/20161104205906937.jpg" style="width: 210px">
+					      			<div>HTML框架集与布局</div>
+					      			<div class="small" style="color: #BFBFBF">132人在学<span class="small ml-4" style="color:red">￥148.00</span></div>
+					      		</div>
+					      		<div class="border p-2">
+					      			<img src="images/4.png" style="width: 210px">
+					      			<div>HTML框架集与布局</div>
+					      			<div class="small" style="color: #BFBFBF">132人在学<span class="small ml-4" style="color:red">￥148.00</span></div>
+					      		</div>
+					      	</div>
+					      	<div class="row mt-3 mb-3" >
+					      		<div class="border p-2">
+					      			<img src="images/20161104205906937.jpg" style="width: 210px">
+					      			<div>HTML框架集与布局</div>
+					      			<div class="small" style="color: #BFBFBF">132人在学<span class="small ml-4" style="color:red">￥148.00</span></div>
+					      		</div>
+					      		<div class="border p-2">
+					      			<img src="images/20161104205906937.jpg" style="width: 210px">
+					      			<div>HTML框架集与布局</div>
+					      			<div class="small" style="color: #BFBFBF">132人在学<span class="small ml-4" style="color:red">￥148.00</span></div>
+					      		</div>
+					      		<div class="border p-2">
+					      			<img src="images/4.png" style="width: 210px">
+					      			<div>HTML框架集与布局</div>
+					      			<div class="small" style="color: #BFBFBF">132人在学<span class="small ml-4" style="color:red">￥148.00</span></div>
+					      		</div>
+					      		<div class="border p-2">
+					      			<img src="images/20161104205906937.jpg" style="width: 210px">
+					      			<div>HTML框架集与布局</div>
+					      			<div class="small" style="color: #BFBFBF">132人在学<span class="small ml-4" style="color:red">￥148.00</span></div>
+					      		</div>
+					      	</div>
+					      </div>
+					    </div>
+					    <div id="menu1" class="container tab-pane fade">
+					    	<!-- 切换2 -->
+					       <ul class="nav nav-pills" role="tablist">
+					           <li class="nav-item">
+					             <a class="nav-link text-dark" data-toggle="pill" href="#tiwen">我的提问</a>
+					           </li>
+					           <li class="nav-item">
+					             <a class="nav-link text-dark" data-toggle="pill" href="#hueda">我的回答</a>
+					           </li>
+					         </ul>
+
+					         <!-- Tab panes -->
+					         <div class="tab-content">
+					           <div id="tiwen" class="container tab-pane active"><br>
+								 <p class="mt-5">讨论区学生提问第二个问题</p>
+					             <div class="mt-3 small pb-4" style="border-bottom:1px solid #D9D9D9">2016-11-01-09 09:56:27<span class="ml-5">4赞同</span></div>
+					             <p class="mt-5">讨论区学生提问第二个问题</p>
+					             <div class="mt-3 small pb-4" style="border-bottom:1px solid #D9D9D9">2016-11-01-09 09:56:27<span class="ml-5">4赞同</span></div>
+					           </div>
+					           <div id="hueda" class="container tab-pane fade"><br>
+					             <p class="mt-5">讨论区学生提问第二个问题</p>
+					             <div class="mt-3 small pb-4" style="border-bottom:1px solid #D9D9D9">2016-11-01-09 09:56:27<span class="ml-5">4赞同</span></div>
+					             <p class="mt-5">测试提问123123123123</p>
+					             <div class="mt-3 small pb-4" style="border-bottom:1px solid #D9D9D9">2016-11-01-09 09:56:27<span class="ml-5">4赞同</span></div>
+					             <p class="mt-5">讨论区学生提问第二个问题</p>
+					             <div class="mt-3 small pb-4" style="border-bottom:1px solid #D9D9D9">2016-11-01-09 09:56:27<span class="ml-5">4赞同</span></div>
+					           </div>
+					         </div>
+					    </div>
+
+					    <div id="menu2" class="container tab-pane fade"><br>
+					      <textarea name="content" style="width:500px;height:400px;visibility:hidden;"></textarea>
+					       <p>您已经输入了 <span class="word_count1">0</span> 个字</p>
+					    </div>
+					  </div>
+				</div>
+					<script>
+					    var editor;
+					    KindEditor.ready(function(K) {
+					        editor = K.create('textarea[name="content"]', {
+					            resizeType : 1,
+					            allowPreviewEmoticons : false,
+					            allowImageUpload : false,
+					            items : [
+					                'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+					                'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+					                'insertunorderedlist', '|', 'emoticons', 'image', 'link'],
+					            afterChange : function() {
+					                K('.word_count1').html(this.count());
+					                K('.word_count2').html(this.count('text'));
+					            }
+					        });
+					    });
+					</script>
+				<div class="col-12 col-md-4  mt-4">
+					<div class="container bg-white p-3 text-center">
+						<div class="row mb-3">
+							<div class="col-6">最近访客</div>
+							<div class="col-6">更多></div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<img src="images/1.png">
+								<div>BANGANG</div>
+							</div>
+							<div class="col-4">
+								<img src="images/2.png">
+								<div>彧</div>
+							</div>
+							<div class="col-4">
+								<img src="images/3.png">
+								<div>怒切萝卜</div>
+							</div>
+						</div>
+						<div class="p-5">
+							
+
+						</div>
+					</div>
+					<div class="container bg-white p-3 text-center mt-3">
+						<div class="row mb-3">
+							<div class="col-6">最近访客</div>
+							<div class="col-6">更多></div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<img src="images/1.png">
+								<div>BANGANG</div>
+							</div>
+							<div class="col-4">
+								<img src="images/2.png">
+								<div>彧</div>
+							</div>
+							<div class="col-4">
+								<img src="images/3.png">
+								<div>怒切萝卜</div>
+							</div>
+						</div>
+						<div class="p-5">
+							
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-dark text-white ">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="mt-5">
+						<img src="images/学习平台.png">
+						<p class="mt-3">MOOC学习平台为你提供海量优质课程，以新颖的在线学习体验帮助你获得全新的个人发展和能力提升。</p>
+						<div class="mt-5">关注我们:<span class="iconfont">&#xe63c;</span>&nbsp;<span class="iconfont">&#xe63d;</span>&nbsp;<span class="iconfont">&#xe6f4;</span></div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="text-center mt-5">
+						<div>扫微信公众号</div>
+						<img src="images/5.png">
+					</div>
+				</div>
+			</div>
+			<div class=" row" style="border-bottom:1px solid #898585">
+				<div class="clearfix wb pb-2" >
+					<div>关于我们</div>
+					<div>联系我们</div>
+					<div>意见反馈</div>
+					<div>友情链接</div>
+					<div>常见问题</div>
+					<div>帮助中心</div>
+				</div>
+			</div>
+			<div class="text-center mt-3">&copy;2016 大学信息平台开发小组(备案和版权详细文字)</div>
+		</div>
+	</section>
+
+</body>
+</html>

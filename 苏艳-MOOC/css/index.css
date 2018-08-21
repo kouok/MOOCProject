@@ -1,0 +1,17 @@
+.block{display: block;}
+.none{display: none;}
+.w50{width: 20%;}
+.bg-img{background: url(../img/bg2.jpg) no-repeat;width: 100%}
+@media screen and (max-width:640px){
+   .box{display: none;}
+}
+ @media screen and (min-width:641px) and (max-width:1080px){
+       .box{display: none;}
+}
+.row .red{color: red}
+.bg-white{background-color: white}
+.border-none{border: none;}
+.bg-red{background-color: red}
+.bor-r{border-right: 1px solid #D8D6D6}
+.bor-b{border-bottom: 1px solid #D8D6D6 }
+hr{width: 100%;color: white}
