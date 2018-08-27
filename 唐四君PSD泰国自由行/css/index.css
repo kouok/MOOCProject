@@ -1,0 +1,44 @@
+.bj{background-color:#fed930;height:54px}
+.clearfix:after{content:"";height:0;display:block;clear:both;}
+
+/* 本例子css -------------------------------------- 幻灯片 */
+      .slideBox{ position:relative; overflow:hidden; margin:10px auto;  max-width:640px;/* 设置焦点图最大宽度 */ }
+      .slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:0; right:45%; z-index:1; }
+      .slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+      .slideBox .hd li.on{ background:#fff;  }
+      .slideBox .bd{ position:relative; z-index:0; }
+      .slideBox .bd li{ position:relative; text-align:center;  }
+      .slideBox .bd li img{ vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
+      .slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+      .slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; color:#fff;  text-align:left;  }
+
+a{text-decoration:none;}
+li{list-style:none;}
+  .hotel{display:flex;text-align:center;padding:0 2% 0 2%;}
+  .hotel>li{flex:3;}
+  .hotel_1 div{margin:2% 0;}
+  .ziti{font-size:18px;color:#fa6148}
+ .ziti1{font-size:18px;color:#fdc542}
+ .ziti2{font-size:18px;color:#35bbef}
+ .bjys{background-color:#DAD9D9}
+ .zj{background-color:#fff;}
+ .zj1{background-color:#fff;margin-bottom:10px;padding:10px 0}
+ .juzong{text-align:center;}
+ {border-bottom:1px dashed #666}
+ .tgzl{color:#ffb001}
+ .bjt{position:relative;}
+ .bjt-zi{position:absolute;top:92%;left:20%;}
+ .liaojie{color:red;}
+ .liaojie1{color: red;font-size:22px}
+ .xunzhao{margin-top:35%;background-color:#fedb35;height:100%;padding:10px 0;}
+ .liaojie-xz{color:#007adf}
+ .yes{display:flex;}
+ .yes>div{flex:2;}
+ .no{color:#6A6969;border-right:1px dashed #666}
+ .xbt{display:block;background-image: url(../images/index/sprite-index.png); background-repeat: no-repeat;background-position: 0 -25px;}
+ .btn{background-color:#ffb001;border-radius:5px;border:0}
+ .liucheng{padding-bottom:20px}
+ .wb{background-color:#252525;height: 100%;color:#fff;padding-top:10px;}
+ .wb_1{color:#f6ae14;font-weight: bold;margin-bottom:10px}
+ .weibu{display:flex;margin-top:10px;}
+ .weibu1{flex:4;}
